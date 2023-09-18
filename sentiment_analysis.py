@@ -20,9 +20,10 @@ def get_sentiment(text: str, *, threshold: float) -> Mood:
         return Mood("Neutral", sentiment)
 
 if __name__ == '__main__':
-    print("Enter 'submit' to exit sentiment analysis")
+    print("Enter 'quit' to exit sentiment analysis")
     text = ""
-    while text != "submit":
+    while text.lower() != "quit":
         text = input("Enter text for sentiment analysis: ")
-        mood = get_sentiment(text, threshold = 0.33)
-        print("Classification: " + mood.classification + ", Sentiment: " + mood.sentiment)
+        mood = get_sentiment(text, threshold=0.33)
+        print("Classification: " + mood.classification + ", Sentiment: " + str(mood.sentiment))
+
