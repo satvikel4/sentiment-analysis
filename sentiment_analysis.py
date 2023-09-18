@@ -21,9 +21,9 @@ def get_sentiment(text: str, *, threshold: float) -> Mood:
 
 if __name__ == '__main__':
     print("Enter 'quit' to exit sentiment analysis")
-    text = ""
+    text = input("Enter text for sentiment analysis: ")
     while text.lower() != "quit":
-        text = input("Enter text for sentiment analysis: ")
         mood = get_sentiment(text, threshold=0.33)
         print("Classification: " + mood.classification + ", Sentiment: " + str(mood.sentiment))
+        text = input("Enter text for sentiment analysis: ")
 
