@@ -6,6 +6,8 @@ class Mood:
     classification: str
     sentiment: float
 
+THRESHOLD = 0.33
+
 def get_sentiment(text: str, threshold: float) -> Mood:
     sentiment = TextBlob(text).sentiment.polarity
 
@@ -18,7 +20,7 @@ def get_sentiment(text: str, threshold: float) -> Mood:
 
     return Mood(classification, sentiment)
 
-if __name__ == '__main__':
+def main():
     print("Enter 'quit' to exit sentiment analysis")
     
     while True:
@@ -27,5 +29,8 @@ if __name__ == '__main__':
         if text.lower() == "quit":
             break
             
-        mood = get_sentiment(text, threshold=0.33)
+        mood = get_sentiment(text, threshold=THRESHOLD)
         print(f"Classification: {mood.classification}, Sentiment: {mood.sentiment}")
+
+if __name__ == '__main__':
+    main()
