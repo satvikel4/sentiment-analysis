@@ -1,6 +1,7 @@
 from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from dataclasses import dataclass
+import json
 
 @dataclass
 class Mood:
@@ -39,11 +40,14 @@ def get_sentiment_vader(text: str, threshold: float) -> Mood:
 
     return classification, compound_score
 
-def main():
-    print("Enter 'quit' to exit sentiment analysis")
+def load_dataset_from_json(file_path):
+    with open(file_path, "r") as json_file:
+        dataset = json.load(json_file)
+    return dataset
 
+def analyze_text():
     while True:
-        text = input("Enter text for sentiment analysis: ")
+        text = input("Enter text for sentiment analysis (or 'quit' to exit): ")
 
         if text.lower() == "quit":
             break
@@ -55,6 +59,32 @@ def main():
 
         print(f"TextBlob - Classification: {mood.textblob_classification}, Sentiment: {mood.textblob_sentiment}")
         print(f"VADER - Classification: {mood.vader_classification}, Sentiment: {mood.vader_sentiment}")
+
+def analyze_dataset(dataset):
+    for sample in dataset:
+        text = sample["text"]
+        textblob_classification, textblob_sentiment = get_sentiment_textblob(text, THRESHOLD_TEXTBLOB)
+        vader_classification, vader_sentiment = get_sentiment_vader(text, THRESHOLD_VADER)
+
+        mood = Mood(textblob_classification, vader_classification, textblob_sentiment, vader_sentiment)
+
+        print(f"TextBlob - Classification: {mood.textblob_classification}, Sentiment: {mood.textblob_sentiment}")
+        print(f"VADER - Classification: {mood.vader_classification}, Sentiment: {mood.vader_sentiment}")
+
+def main():
+    print("Choose an option:")
+    print("1. Analyze text input")
+    print("2. Analyze the dataset")
+
+    choice = input("Enter your choice (1 or 2): ")
+
+    if choice == "1":
+        analyze_text()
+    elif choice == "2":
+        dataset = load_dataset_from_json("sentiment_dataset.json")
+        analyze_dataset(dataset)
+    else:
+        print("Invalid choice. Please enter 1 or 2.")
 
 if __name__ == '__main__':
     main()

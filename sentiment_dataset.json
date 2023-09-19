@@ -1,0 +1,14 @@
+[
+    {
+        "text": "I love this product! It's amazing.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The weather is terrible today.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm feeling neutral about this movie.",
+        "sentiment": "Neutral"
+    }
+]
