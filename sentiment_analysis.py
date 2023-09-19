@@ -61,15 +61,26 @@ def analyze_text():
         print(f"VADER - Classification: {mood.vader_classification}, Sentiment: {mood.vader_sentiment}")
 
 def analyze_dataset(dataset):
+    textblob_correct = 0
+    vader_correct = 0
+    total_samples = len(dataset)
+
     for sample in dataset:
         text = sample["text"]
-        textblob_classification, textblob_sentiment = get_sentiment_textblob(text, THRESHOLD_TEXTBLOB)
-        vader_classification, vader_sentiment = get_sentiment_vader(text, THRESHOLD_VADER)
+        textblob_classification, _ = get_sentiment_textblob(text, THRESHOLD_TEXTBLOB)
+        vader_classification, _ = get_sentiment_vader(text, THRESHOLD_VADER)
+        ground_truth = sample["sentiment"]
 
-        mood = Mood(textblob_classification, vader_classification, textblob_sentiment, vader_sentiment)
+        if textblob_classification == ground_truth:
+            textblob_correct += 1
+        if vader_classification == ground_truth:
+            vader_correct += 1
 
-        print(f"TextBlob - Classification: {mood.textblob_classification}, Sentiment: {mood.textblob_sentiment}")
-        print(f"VADER - Classification: {mood.vader_classification}, Sentiment: {mood.vader_sentiment}")
+    textblob_accuracy = (textblob_correct / total_samples) * 100
+    vader_accuracy = (vader_correct / total_samples) * 100
+
+    print(f"TextBlob Accuracy: {textblob_accuracy:.2f}%")
+    print(f"VADER Accuracy: {vader_accuracy:.2f}%")
 
 def main():
     print("Choose an option:")
