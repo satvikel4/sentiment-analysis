@@ -10,5 +10,205 @@
     {
         "text": "I'm feeling neutral about this movie.",
         "sentiment": "Neutral"
+    },
+    {
+        "text": "This book is fantastic and uplifting!",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The traffic jam was frustrating and annoying.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The food at the restaurant was mediocre.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "I had a great time at the party last night.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The service at the hotel was excellent.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I can't stand this song. It's awful.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm indifferent about the new policy.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The movie was disappointing despite the hype.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The concert was electrifying and unforgettable.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The customer support was unhelpful and frustrating.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I feel mixed emotions about this situation.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The vacation was relaxing and rejuvenating.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I adore the new album. It's brilliant!",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The company's stock plummeted, causing anxiety.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I have no strong feelings about this topic.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The play was captivating and moving.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The project's success brought relief and joy.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The crime rate in the city is alarming.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I find the subject matter uninteresting and dull.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm enthusiastic about the upcoming event.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The quality of the product is disappointing.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The museum exhibit was educational and inspiring.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I can't help but feel a sense of nostalgia.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The team's victory was exhilarating.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The long wait at the doctor's office was frustrating.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The new design is modern and impressive.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The concert was a total letdown.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm ambivalent about the new policy changes.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The restaurant's food was average.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The news is disheartening and depressing.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The hike in the mountains was breathtaking.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I'm thrilled about the upcoming vacation.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The movie was a rollercoaster of emotions.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The customer service was a nightmare.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm on the fence about this decision.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The concert was unforgettable and amazing!",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The traffic jam made me late and frustrated.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I find this topic fascinating and intriguing.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I'm apathetic about the current political situation.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The service at the restaurant was terrible.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The movie left me feeling emotionally drained.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I'm excited about the future possibilities.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The presentation was informative and insightful.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The news is uplifting and heartwarming.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The project's success is a relief.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "I'm overwhelmed by the workload.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "The restaurant's atmosphere is cozy and inviting.",
+        "sentiment": "Positive"
+    },
+    {
+        "text": "The performance was disappointing and lackluster.",
+        "sentiment": "Negative"
+    },
+    {
+        "text": "I have mixed feelings about this decision.",
+        "sentiment": "Neutral"
+    },
+    {
+        "text": "The trip was adventurous and thrilling.",
+        "sentiment": "Positive"
     }
 ]
